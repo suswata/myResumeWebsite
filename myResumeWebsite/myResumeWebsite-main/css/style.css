@@ -1,0 +1,293 @@
+*{
+ 
+  /* overflow-x: hidden; */
+  text-align: center;
+    box-sizing:content-box; 
+    background-color: rgb(243, 217, 177);
+    max-width: 1498px;
+    
+    
+}
+body{
+  background-color: rgb(243, 217, 177);
+}
+
+.navbar-toggler{
+  background-color: white;
+}
+
+.heading:hover{
+    color: rgb(255, 0, 0);
+}
+.info{
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.input-group{
+
+  height: auto;
+}
+.home{
+
+  width: 30px;
+}
+.navbar-block{
+  width: 100%;
+background: black;
+min-height: 30px;
+padding: 10px;
+text-align: center;
+font-size: 25px;
+text-align: center;
+}
+
+.navbar{
+    
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: -1%;
+    margin-right: -1%;
+  
+}
+
+.navbar .name {
+  display: none;
+  
+}
+.navbar li {
+  display:inline;
+  padding: 5px 10px 10px 10px;
+}
+.navbar a {
+  transition: all .5s;
+}
+.navbar a:hover {
+  color: white
+}
+#gitsearch:focus{
+  background-color: #DEC0F1;
+}
+#gitsearch-1{
+  
+  background-color: green;
+  color: white;
+  width: 10%;
+  
+}
+/*
+.bg-img{
+  background-image: url("https://www.esa.int/var/esa/storage/images/19716864-11-eng-GB/ESA_root_pillars.jpg");
+}*/
+.heading{
+  font-family: Garamond, serif;
+  
+  padding-left: 46px;
+}
+.education,.experiences,.skills{
+    line-height: 28px;
+    letter-spacing: 1px;
+
+}
+
+.mylogo{
+    text-align: center;
+    margin-top: 50px;
+    width: 165px;
+    height: 111px;
+    border-radius: 25%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #0d2efd00;
+    border-image: initial;
+    transition: transform .5s ease-in-out;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+
+.bg-img img.mylogo-onhover{
+  text-align: center;
+  
+  width: 199px;
+  height: 178px;
+  border-radius: 51%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #0d2efd00;
+  border-image: initial;
+  display: block;
+margin-left: auto;
+
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.bg-img:hover img.mylogo-onhover{
+
+  opacity: 1;
+}
+
+.mylogo:hover{
+  
+  transform: scale(1.2) rotate(360deg);
+}
+a {
+    text-decoration: none;
+    color: #0073e6;
+  }
+  a:hover {
+    color: #6633ff;
+  }
+  
+.intro{
+  color: palevioletred;
+}
+
+.skills{
+  color: black;
+  
+} 
+
+.skills .lang:hover{
+
+background-color: black;
+background-size: 10px;
+color: whitesmoke;
+
+}
+
+.block {
+  
+  padding: 50px 0;
+  transition: background .3s ease-in-out;
+}
+.marquee .text {
+    display: flex;
+    font-size: clamp(5rem, 15vw, 16rem);
+    font-weight: 700;
+    line-height: 125%;
+    white-space: nowrap;
+    z-index: auto;
+}
+@media screen and (min-width:375px) and (max-width:667px)
+{
+  .marquee.text,.sticky{
+    display: none;
+  }
+  .handles li {
+    display: inline-block;
+    margin-right: 83px;
+}
+.intro {
+  color: palevioletred;
+  letter-spacing: 1px;
+  line-height: 29px;
+}
+/*  */
+}
+
+  .myname {
+    display: flex;
+    border: 2px solid white;
+    
+  }
+  .sticky{
+    overflow-x: hidden;
+    position: fixed;
+    top:0;
+  }
+  .movetext{
+    position: fixed;
+    font-size: clamp(3rem, 0vw, 6rem);
+    font-weight: 700;
+    line-height: 125%;
+    white-space: nowrap;
+    z-index: auto;
+    right: -700px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  
+  }
+  
+  ul{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style: none;
+  }
+  .handles::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .handles li{
+    
+    display:inline-block;
+    margin-left: 5px;
+  }
+  .handles-contact{
+    padding-bottom: 58px;
+    padding-right: 238px;
+    
+    bottom: 0;
+    width: 100%;
+
+  }
+  .handle{
+    text-align: center;
+    height: 36px;
+    /*border-radius: 72%;*/
+    display: block;
+    margin-left: 170px;
+  margin-right: 66px;
+  float:right;
+    transition: transform .5s ease-in-out;
+  }
+  .handle:hover{
+    transform: scale(0.75) rotate(360deg);
+  }
+  #sports-link:hover{
+
+    border: 2px solid rgb(81, 187, 254);
+    color: black;
+  }
+
+  .details{
+    margin:13%;
+    width: 77%;
+    padding: 0px;
+  }
+  .rights-contact{
+    
+      
+      bottom: 0;
+      width: 100%;
+      
+  }
+  .rights{
+      background-color: white;
+  }
+  .copyrights{
+
+      text-align: center;
+      color: white;
+      background-color: black;
+      
+  }
+  .copyrights a{
+    background-color:black ;
+  }
+ 

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class=bg-clr style="background-color:rgb(243, 217, 177);">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+        <link rel="shortcut icon" href="https://image.pngaaa.com/525/4299525-middle.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>Contact Me</title>
+    </head>
+
+    <body>
+
+        <div class="bg-img">
+
+            <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Pusheen_the_Cat.png" alt="My Logo" class="mylogo">
+            <img src="https://yt3.ggpht.com/ytc/AKedOLS71O9nq4zfzHTDyRJZrLY8HrFFC6cOZIJolgZo=s900-c-k-c0x00ffffff-no-rj"
+                alt="My Logo" class="mylogo-onhover">
+
+        </div>
+        <h1 class="heading">Contact Me</h1>
+        <div class="details">
+            <div class="email">
+                <nav class="navbar bg-light">
+                    <form class="container-fluid">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">Enter Your Email</span>
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                    </form>
+                </nav>
+            </div>
+            <div class="name">
+                <nav class="navbar bg-light">
+                    <form class="container-fluid">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">Enter Your Name</span>
+                            <input type="text" class="form-control" placeholder="Name" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                    </form>
+                </nav>
+            </div>
+            <div class="ph-no">
+                <nav class="navbar bg-light">
+                    <form class="container-fluid">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">Enter Your Number</span>
+                            <input type="number" class="form-control" placeholder="Number" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                    </form>
+                </nav>
+            </div>
+            <div class="captcha">
+                <nav class="navbar bg-light">
+                    <form class="container-fluid">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">Enter The Captcha Code given </span>
+
+                            <script>
+                                let OTP = '';
+                                let a = ['','','',''];
+                                function captcha() {
+                                    var string = '0123456789';
+                                    // Find the length of string
+                                    var len = string.length;
+                                    var len_a = 0;
+                                    for (let i = 0; i < 4; i++) {
+                                        
+                                        if(len_a<4)
+                                        {
+                                            a[i]+= string[Math.floor(Math.random()*10)];
+                                            len_a++;
+                                        }
+                                        else{
+                                            break;
+                                        }
+                                        
+                                       
+                                       
+                                    }
+                                    var str = '';
+                                    for(var i=0;i<4;i++){ 
+                                       
+                                        str += a[i];
+                                    }
+
+                                    return str;
+                                    
+                                    
+                                    
+                                    
+                                }
+                                document.write(captcha());
+                                function print()
+                                {
+                                    var str1 = '';
+                                    for(var i=0;i<4;i++){ 
+                                       
+                                        str1 += a[i];
+                                    }
+                                    for(var i=0;i<4;i++){ 
+                                        
+                                    var val = document.getElementById("captcha-search").value;
+                                    console.log(val);
+                                    if (val === "" || val === null) {
+                                        alert("Invalid(No number entered");
+                                        break;
+                                    }
+                                    else if (val === str1){
+                                        alert("Thanks");
+                                        break;
+                                    }
+                                    else{
+                                        alert(`Invalid Captcha`);
+                                         break;
+                                    }
+                                }
+    
+                                }
+                                
+
+                                
+                            </script>
+                            <input type="text" id="captcha-search" class="form-control" placeholder="Enter Captcha" aria-label="Username"
+                                aria-describedby="basic-addon1">
+
+                        </div>
+                    </form>
+                </nav>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="print()">Submit</button>
+
+        </div>
+
+    </body>
+    <footer>
+        <div class="handles-contact">
+            <ul>
+                <li>
+                    <a href="https://instagram.com" target="_blank">
+                        <img class="handle"
+                            src="https://www.pngitem.com/pimgs/m/82-821814_transparent-ig-png-blue-instagram-icon-png-png.png"
+                            alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank">
+                        <img class="handle"
+                            src="https://www.hamiltoncountyhealth.org/wp-content/uploads/Twitter-Logo.png"
+                            alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" target="_blank">
+                        <img class="handle"
+                            src="https://3.bp.blogspot.com/-S8HTBQqmfcs/XN0ACIRD9PI/AAAAAAAAAlk/A_3ZXg7xO4YyGrKDhMpr6YRgrtOMn9tHwCLcBGAs/s1600/f_logo_RGB-Blue_1024.png"
+                            alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com" target="_blank">
+                        <img class="handle"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4tlxByyGNDV41-Mk_5xejC7tYvhfDcQ8gMvmKqyK5c277ZzYfJifao0xQwA5LKBrXogA&usqp=CAU"
+                            alt="Github">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="rights-contact">
+            <p class="copyrights">&copy; <em>Trademarks Reserved &nbsp;</em><a
+                    href="index.html"><em>webdevBydhanush.com</em></a></p>
+        </div>
+    </footer>
+</div>
+</div>
+
+</html>
